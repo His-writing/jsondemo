@@ -19,6 +19,9 @@
 		F0B3311D1999B73800CE25DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B331051999B73700CE25DC /* UIKit.framework */; };
 		F0B331251999B73800CE25DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0B331231999B73800CE25DC /* InfoPlist.strings */; };
 		F0B331271999B73800CE25DC /* jsondemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B331261999B73800CE25DC /* jsondemoTests.m */; };
+		F0B331351999B75400CE25DC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B331321999B75400CE25DC /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F0B331361999B75400CE25DC /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B331341999B75400CE25DC /* NSData+AES.m */; };
+		F0B331431999D57A00CE25DC /* AA.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B331421999D57A00CE25DC /* AA.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		F0B331221999B73800CE25DC /* jsondemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jsondemoTests-Info.plist"; sourceTree = "<group>"; };
 		F0B331241999B73800CE25DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F0B331261999B73800CE25DC /* jsondemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jsondemoTests.m; sourceTree = "<group>"; };
+		F0B331311999B75400CE25DC /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		F0B331321999B75400CE25DC /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		F0B331331999B75400CE25DC /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		F0B331341999B75400CE25DC /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		F0B331411999D57A00CE25DC /* AA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AA.h; sourceTree = "<group>"; };
+		F0B331421999D57A00CE25DC /* AA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AA.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +86,7 @@
 		F0B330F51999B73700CE25DC = {
 			isa = PBXGroup;
 			children = (
+				F0B331301999B75400CE25DC /* AES */,
 				F0B331071999B73700CE25DC /* jsondemo */,
 				F0B331201999B73800CE25DC /* jsondemoTests */,
 				F0B331001999B73700CE25DC /* Frameworks */,
@@ -109,6 +119,8 @@
 			children = (
 				F0B331101999B73700CE25DC /* AppDelegate.h */,
 				F0B331111999B73700CE25DC /* AppDelegate.m */,
+				F0B331411999D57A00CE25DC /* AA.h */,
+				F0B331421999D57A00CE25DC /* AA.m */,
 				F0B331131999B73800CE25DC /* Images.xcassets */,
 				F0B331081999B73700CE25DC /* Supporting Files */,
 			);
@@ -142,6 +154,17 @@
 				F0B331231999B73800CE25DC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0B331301999B75400CE25DC /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				F0B331311999B75400CE25DC /* JSONKit.h */,
+				F0B331321999B75400CE25DC /* JSONKit.m */,
+				F0B331331999B75400CE25DC /* NSData+AES.h */,
+				F0B331341999B75400CE25DC /* NSData+AES.m */,
+			);
+			path = AES;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +264,9 @@
 			files = (
 				F0B331121999B73700CE25DC /* AppDelegate.m in Sources */,
 				F0B3310E1999B73700CE25DC /* main.m in Sources */,
+				F0B331431999D57A00CE25DC /* AA.m in Sources */,
+				F0B331361999B75400CE25DC /* NSData+AES.m in Sources */,
+				F0B331351999B75400CE25DC /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +465,7 @@
 				F0B3312C1999B73800CE25DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0B3312D1999B73800CE25DC /* Build configuration list for PBXNativeTarget "jsondemoTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +474,7 @@
 				F0B3312F1999B73800CE25DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
